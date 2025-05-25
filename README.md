@@ -132,7 +132,7 @@
             
             <a href="https://www.tiktok.com/@sssnipex" class="btn" target="_blank" rel="noopener noreferrer">
                 <span class="btn-icon">🎵</span>
-                <span>Мы в TikTok</span>
+                <span>Я в TikTok</span>
             </a>
         </div>
         
