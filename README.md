@@ -1,1 +1,165 @@
-# sssnipex.github.io
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SnipDesign - Контакты и портфолио</title>
+    <meta name="description" content="SnipDesign - профессиональный дизайн для ваших проектов">
+    <meta property="og:title" content="SnipDesign">
+    <meta property="og:description" content="Профессиональный дизайн для ваших проектов">
+    <meta property="og:image" content="https://example.com/path/to/your/image.jpg">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #2a2a2a;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        
+        .container {
+            text-align: center;
+            padding: 20px;
+            max-width: 800px;
+            width: 90%;
+            animation: fadeIn 0.5s ease-out;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        h1 {
+            margin-bottom: 40px;
+            font-size: 2.5rem;
+        }
+        
+        .buttons-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+            width: 100%;
+        }
+        
+        @media (min-width: 600px) {
+            .buttons-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        
+        .btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            background-color: #3a3a3a;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            font-size: 1.2rem;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            height: 100px;
+        }
+        
+        .btn:hover {
+            background-color: #4a4a4a;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+        
+        .btn-icon {
+            font-size: 1.8rem;
+            margin-right: 15px;
+        }
+        
+        footer {
+            margin-top: 50px;
+            color: #888;
+            font-size: 0.9rem;
+        }
+        
+        #toTop {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #3a3a3a;
+            color: white;
+            border: none;
+            cursor: pointer;
+            display: none;
+            font-size: 1.5rem;
+            transition: all 0.3s;
+        }
+        
+        #toTop:hover {
+            background-color: #4a4a4a;
+        }
+        
+        #toTop.show {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>SnipDesign</h1>
+        
+        <div class="buttons-grid">
+            <a href="https://t.me/sxdsg_bot" class="btn" target="_blank" rel="noopener noreferrer">
+                <span class="btn-icon">📝</span>
+                <span>Сделать заказ в ТГ</span>
+            </a>
+            
+            <a href="https://t.me/SnipDesign" class="btn" target="_blank" rel="noopener noreferrer">
+                <span class="btn-icon">📬</span>
+                <span>Мой канал в Телеграм</span>
+            </a>
+            
+            <a href="https://t.me/SnipPortfolio" class="btn" target="_blank" rel="noopener noreferrer">
+                <span class="btn-icon">🎨</span>
+                <span>Мое портфолио</span>
+            </a>
+            
+            <a href="https://www.tiktok.com/@sssnipex" class="btn" target="_blank" rel="noopener noreferrer">
+                <span class="btn-icon">🎵</span>
+                <span>Мы в TikTok</span>
+            </a>
+        </div>
+        
+        <footer>
+            © 2023 SnipDesign. Все права защищены.
+        </footer>
+    </div>
+
+    <button id="toTop" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">↑</button>
+
+    <script>
+        // Кнопка "Наверх"
+        const toTopButton = document.getElementById('toTop');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                toTopButton.classList.add('show');
+            } else {
+                toTopButton.classList.remove('show');
+            }
+        });
+
+        // Анимация при загрузке
+        document.addEventListener('DOMContentLoaded', () => {
+            document.body.style.opacity = 1;
+        });
+    </script>
+</body>
+</html>
