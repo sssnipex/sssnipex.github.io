@@ -112,7 +112,7 @@
 </head>
 <body>
     <div class="container">
-        <h1>SnipDesign</h1>
+        <h1>Мини-адаптер sil2nt.t.me</h1>
         
         <div class="buttons-grid">
             <a href="https://t.me/sxdsg_bot" class="btn" target="_blank" rel="noopener noreferrer">
