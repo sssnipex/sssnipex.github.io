@@ -6,12 +6,19 @@
     <meta name="description" content="Адаптер для быстрого доступа к ресурсам">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
     <style>
+        @font-face {
+            font-family: 'Coves Bold';
+            src: url('https://fonts.cdnfonts.com/css/coves') format('woff2');
+            font-weight: bold;
+            font-style: normal;
+        }
+        
         body {
             margin: 0;
             padding: 0;
-            font-family: 'Bebas Neue', sans-serif;
+            font-family: 'Coves Bold', 'Montserrat', sans-serif;
             background: linear-gradient(90deg, #1a1a1a 0%, #2e2e2e 50%, #1a1a1a 100%);
             color: #ffffff;
             display: flex;
@@ -39,17 +46,18 @@
         }
         
         .header a {
-            color: white; /* Белый цвет текста */
+            color: white;
             text-decoration: none;
             font-size: 3rem;
             letter-spacing: 2px;
-            text-shadow: 0 0 8px rgba(100, 180, 255, 0.6), 0 0 16px rgba(100, 180, 255, 0.4); /* Бледное синее свечение */
+            text-shadow: 0 0 8px rgba(100, 180, 255, 0.6), 0 0 16px rgba(100, 180, 255, 0.4);
             transition: all 0.3s ease;
             position: relative;
+            font-family: 'Coves Bold', sans-serif;
         }
         
         .header a:hover {
-            text-shadow: 0 0 12px rgba(100, 180, 255, 0.8), 0 0 24px rgba(100, 180, 255, 0.6); /* Усиленное свечение при наведении */
+            text-shadow: 0 0 12px rgba(100, 180, 255, 0.8), 0 0 24px rgba(100, 180, 255, 0.6);
         }
         
         .buttons-grid {
@@ -81,13 +89,14 @@
             height: 120px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             backdrop-filter: blur(5px);
+            font-family: 'Coves Bold', sans-serif;
         }
         
         .btn:hover {
             background-color: rgba(60, 60, 60, 0.9);
             transform: translateY(-5px);
             box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-            border-color: rgba(100, 180, 255, 0.6); /* Бледная синяя граница при наведении */
+            border-color: rgba(100, 180, 255, 0.6);
         }
         
         .btn-icon {
@@ -96,6 +105,10 @@
             margin-right: 20px;
             object-fit: contain;
             border-radius: 10px;
+            background-color: rgba(50, 50, 50, 0.5);
+            padding: 8px;
+            box-sizing: border-box;
+            filter: brightness(1.1) contrast(1.1);
         }
         
         footer {
@@ -103,6 +116,7 @@
             color: #666;
             font-size: 0.9rem;
             letter-spacing: 1px;
+            font-family: 'Coves Bold', sans-serif;
         }
         
         #toTop {
@@ -113,7 +127,7 @@
             height: 50px;
             border-radius: 50%;
             background-color: rgba(40, 40, 40, 0.8);
-            color: rgba(100, 180, 255, 0.8); /* Бледный синий цвет */
+            color: rgba(100, 180, 255, 0.8);
             border: none;
             cursor: pointer;
             display: none;
@@ -147,6 +161,7 @@
                 width: 50px;
                 height: 50px;
                 margin-right: 15px;
+                padding: 5px;
             }
         }
     </style>
@@ -180,7 +195,7 @@
         </div>
         
         <footer>
-            © 2025 sil2nt.t.me | Все права защищены
+            © 2023 sil2nt.t.me | Все права защищены
         </footer>
     </div>
 
