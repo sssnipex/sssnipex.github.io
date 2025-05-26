@@ -174,7 +174,7 @@
             </a>
             
             <a href="https://www.tiktok.com/@sssnipex" class="btn" target="_blank" rel="noopener noreferrer">
-                <img src="https://i2.wp.com/www.pngplay.com/wp-content/uploads/9/TikTok-Logo-Transparent-Background.png" class="btn-icon" alt="TikTok">
+                <img src="https://p77-sg.tiktokcdn.com/obj/tiktok-obj/32679c8bd87ad05400feb247e1bee8dc?shp=81f88b70&amp;shcp=-">
                 <span>Я в ТикТок</span>
             </a>
         </div>
